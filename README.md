@@ -1,2 +1,2 @@
 # helper-backend
-Reference project using spring-boot
+Reference project using Spring Boot 1.4.2
