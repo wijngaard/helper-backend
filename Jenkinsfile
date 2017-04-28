@@ -10,7 +10,7 @@ pipeline {
       steps {
         echo 'check docker version'
         timestamps() {
-          sh 'sudo docker version'
+          sh ' docker version'
         }
         
       }
