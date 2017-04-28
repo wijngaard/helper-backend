@@ -1,15 +1,19 @@
 pipeline {
-  agent {
-    docker {
-      image 'maven'
-    }
-    
-  }
+  agent none
   stages {
     stage('info') {
       steps {
         echo 'hallo jenkinsFile'
-        sh 'mvn --version'
+      }
+    }
+    stage('check version of Docker') {
+      steps {
+        sh 'docker version'
+      }
+    }
+    stage('final') {
+      steps {
+        echo 'end of build'
       }
     }
   }
