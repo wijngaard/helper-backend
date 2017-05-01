@@ -13,7 +13,7 @@ pipeline {
     }
     stage('check version of Docker') {
       steps {
-        echo 'check docker version'
+        echo 'print docker version'
         timestamps() {
           sh ' docker version'
         }
